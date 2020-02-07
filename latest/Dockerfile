@@ -29,7 +29,7 @@ RUN apt-get update \
 
 RUN git clone https://github.com/drolbr/Overpass-API.git app \
     && cd /app \
-    && git checkout $(git describe --abbrev=0 --tags) \
+    && git checkout minor_issues \
     && cd /app/src \
     && autoscan \
     && aclocal \
