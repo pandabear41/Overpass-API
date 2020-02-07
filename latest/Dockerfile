@@ -27,7 +27,7 @@ RUN apt-get update \
         zlib1g \
         zlib1g-dev
 
-RUN git clone https://github.com/drolbr/Overpass-API.git app
+RUN git clone https://github.com/drolbr/Overpass-API.git app \
     && cd /app \
     && git checkout $(git describe --abbrev=0 --tags) \
     && cd /app/src \
